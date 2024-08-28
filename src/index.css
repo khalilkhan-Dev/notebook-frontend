@@ -5,9 +5,55 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(to right, rgb(15, 14, 14) , rgb(57, 55, 55));
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.logo {
+ font-family:'Times New Roman', Times, serif;
+ font-size: 40px;
+ text-decoration: none;
+ color: white;
+}
+.logo:hover{
+  color: rgb(239, 233, 233);
+}
+.logout{
+  padding: 5px 25px 5px 25px;
+  border: none;
+  border-radius: 30px;
+  background-color: white;
+
+}
+.logout:hover{
+  background-color: rgb(239, 233, 233);
+}
+
+@media only screen and (max-width: 600px) {
+  input {
+    width: 100%;
+  }
+  textarea{
+    width: 100%;
+  }
+  .logo {
+    font-size: 20px;
+   }
+   .logout{
+     padding: 5px 15px 5px 15px;
+   
+   }
+}
+@media only screen and (min-width: 600px) {
+  input {
+    width: 25%;
+    
+  }
+  textarea{
+    width: 25%;
+  }
 }
