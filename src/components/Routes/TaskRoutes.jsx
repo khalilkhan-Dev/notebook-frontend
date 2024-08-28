@@ -17,17 +17,17 @@ const TaskRoutes = () => {
           <Route
             path="/tasks"
             element={
-              <ProtectedRoute>
+              
                 <Tasks />
-              </ProtectedRoute>
+             
             }
           />
           <Route
             path="/task/:id"
             element={
-              <ProtectedRoute>
+              
                 <TaskDetails />
-              </ProtectedRoute>
+              
             }
           />
 
