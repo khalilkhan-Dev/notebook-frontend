@@ -12,7 +12,7 @@ const TaskUpdate = () => {
   useEffect(() => {
     const fetchTask = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/tasks/${id}`, {
+        const response = await axios.get(`https://notebook-nine-wheat.vercel.app/tasks/${id}`, {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('token')}`
           }
@@ -29,7 +29,7 @@ const TaskUpdate = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.put(`http://localhost:5000/tasks/${id}`, {
+      await axios.put(`https://notebook-nine-wheat.vercel.app/tasks/${id}`, {
         taskName,
         taskDescription
       }, {

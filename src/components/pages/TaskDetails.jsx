@@ -12,7 +12,7 @@ const TaskDetails = () => {
   useEffect(() => {
     const fetchTaskDetails = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/tasks/${id}`, {
+        const response = await axios.get(`https://notebook-nine-wheat.vercel.app/tasks/${id}`, {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('token')}`
           }
@@ -28,7 +28,7 @@ const TaskDetails = () => {
 
   const handleDelete = async () => {
     try {
-      await axios.delete(`http://localhost:5000/tasks/${id}`, {
+      await axios.delete(`https://notebook-nine-wheat.vercel.app/tasks/${id}`, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`
         }

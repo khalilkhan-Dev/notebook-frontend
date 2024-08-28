@@ -10,7 +10,7 @@ const Tasks = () => {
   useEffect(() => {
     const fetchTask = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/tasks', {
+        const response = await axios.get('https://notebook-nine-wheat.vercel.app/tasks', {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('token')}`
           }

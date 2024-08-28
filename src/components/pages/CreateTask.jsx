@@ -11,7 +11,7 @@ const CreateTask = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/tasks', {
+      await axios.post('https://notebook-nine-wheat.vercel.app/tasks', {
         taskName,
         taskDescription
       }, {
